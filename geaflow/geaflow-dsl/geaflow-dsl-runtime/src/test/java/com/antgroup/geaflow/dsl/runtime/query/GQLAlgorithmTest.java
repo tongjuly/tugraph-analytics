@@ -143,6 +143,28 @@ public class GQLAlgorithmTest {
             .checkSinkResult();
     }
 
+    // @Test
+    // public void testAlgorithmSingleVertexCirclesDetection() throws Exception {
+    //     QueryTester
+    //         .build()
+    //         .withGraphDefine("/query/people_graph.sql")
+    //         .withQueryPath("/query/gql_algorithm_svc.sql")
+    //         .execute();
+
+    // }
+    @Test
+    public void testAlgorithmSingleVertexCirclesDetection() throws Exception {
+        // 执行测试
+        QueryTester
+            .build()
+            .withGraphDefine("/query/people_graph.sql")
+            .withQueryPath("/query/gql_algorithm_svc.sql")
+            .execute()
+            .checkSinkResult();
+    }
+
+
+
     @Test
     public void testIncGraphAlgorithm_001() throws Exception {
         QueryTester
